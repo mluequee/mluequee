@@ -1,16 +1,16 @@
 # Hi, I'm Marvin 
 
-I'm an AI Engineer building production LangGraph systems. 
+I'm an AI Engineer building LangGraph systems.
 
 ## What I Build
 
-**LangGraph Lead Enrichment Pipeline** — production system that processes 107+ leads with 0 crashes, costs $0.027/lead, includes error isolation, cost tracking, and honest accuracy measurement.
+**LangGraph Lead Enrichment Pipeline**: finds the owner's name for local storefront businesses, with a source link for every name and a blank instead of a guess. Measured on a sealed holdout the code had never seen: 17 of 23 delivered names correct (74%, range 54% to 87%), about $0.045 per lead.
 
 - **Fan-out/fan-in parallelism:** 4 concurrent Brave searches, 32s → 1.2s
 - **Confidence cascades:** Cheap model first (Haiku), verify on uncertainty (Sonnet)
 - **Error isolation:** Every API failure handled gracefully
 - **Cost tracking:** Per-lead cost from design day 1
-- **Validation:** 321 production executions, 100% uptime
+- **Measurement:** frozen code, hand-verified answers sealed before the run, scorer committed first
 
 **Portfolio:** [langgraph-lead-enrichment](https://github.com/mluequee/langgraph-lead-enrichment)
 
